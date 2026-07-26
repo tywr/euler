@@ -1,9 +1,10 @@
 import networkx as nx
 
 
+
 def load_pyramid_as_graph():
     graph = nx.DiGraph()
-    with open("pyramid.txt", "r") as file:
+    with open("p18/pyramid.txt", "r") as file:
         pyramid = [list(map(int, line.split())) for line in file]
         for i, (base_layer, next_layer) in enumerate(zip(pyramid, pyramid[1:])):
             for j, value in enumerate(base_layer):
