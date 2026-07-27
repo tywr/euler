@@ -16,7 +16,7 @@ def compute_score(name, position):
 
 if __name__ == "__main__":
     total = 0
-    names = load_names("names.txt")
+    names = load_names("p22/names.txt")
     for name, position in names.items():
         score = compute_score(name, position)
         total += score
